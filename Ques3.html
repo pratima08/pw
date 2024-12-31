@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-8 Ques-4</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-areas: "x x x";
+            font-size: 30px;
+            grid-template-columns: 200px;
+            /* 
+            By using the grid auto-flow-column  property we can give the width of a column if we will not give to every column then this property automatic give the widht of the column 
+            */
+            grid-auto-columns: 400px;
+       }
+       .item{
+            border: 1px solid black
+       }
+       #container-1{
+            display: grid;
+            grid-template-areas: "x x x";
+            font-size: 30px;
+            grid-template-rows: 100px;
+            /* 
+            whhen me can't give every row to height then this grid-auto-row property give the hight defination to every row which defintion we can't give
+            */
+            grid-auto-rows: 150px;
+       }
+       .item-1{
+            border: 1px solid black;
+       }
+
+
+    </style>
+</head>
+<body>
+    <h1>Grid Auto Column Property</h1>
+    <div id="container">
+        <!-- grid-auto-column -->
+        <div class="item">Item1 </div>
+        <div class="item">Item2 </div>
+        <div class="item">Item3</div>
+        <div class="item">Item4 </div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+    </div>
+    <h1>Grid Auto Row Property</h1>
+    <div id="container-1">
+        <!-- grid-auto-row -->
+        <div class="item-1">Item1 </div>
+        <div class="item-1">Item2 </div>
+        <div class="item-1">Item3</div>
+        <div class="item-1">Item4 </div>
+        <div class="item-1">Item5</div>
+        <div class="item-1">Item6</div>
+    </div>
+</body>
+</html>

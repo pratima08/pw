@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmment-8 Ques-2</title>
+    <style>
+        .main-container{
+            display: grid;
+            grid-template-areas:"A A B "
+            "C D B";
+           grid-template-rows: repeat(2 1fr);
+            height: 200px;
+            width: 300px;
+            font-size: 30px;  
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;  
+            border: 4px solid black; 
+            background-color: white;
+            padding: 10%;
+            margin: 0%;
+            
+       }
+       .item1{
+        background-color: bisque;
+        grid-area: A;
+        padding: 20px;
+       }
+       .item2{
+        background-color: bisque;
+        grid-area: B;
+        padding: 20px;
+       }
+       .item3{
+        background-color: bisque;
+        grid-area: C;
+        padding: 20px;
+       }
+       .item4{
+        background-color: bisque;
+        grid-area: D;
+        padding: 20px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+        <div class="item4">D</div>
+    </div>
+</body>
+</html>
